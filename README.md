@@ -1,4 +1,6 @@
-Команды для тестов 
+    Команды для тестов 
+
+
     Проверка создания таблицы
 SELECT * FROM information_schema.tables 
 WHERE table_schema = 'gibdd_fines';
