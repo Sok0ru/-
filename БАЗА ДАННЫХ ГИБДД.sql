@@ -1,9 +1,16 @@
 -- Создание базы данных ГИБДД
-CREATE DATABASE gibdd_fines 
+SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+CREATE DATABASE IF NOT EXISTS gibdd_fines 
 CHARACTER SET utf8mb4 
 COLLATE utf8mb4_unicode_ci;
 
 USE gibdd_fines;
+
+SET character_set_client = utf8mb4;
+SET character_set_connection = utf8mb4;
+SET character_set_results = utf8mb4;
+SET collation_connection = utf8mb4_unicode_ci;
 
 -- 1. Таблица подразделений ГИБДД
 CREATE TABLE departments (
